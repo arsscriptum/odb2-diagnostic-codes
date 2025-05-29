@@ -125,8 +125,72 @@ Copyright OBD-Codes.com
 
 Will load a page in the manufacturer's specific list, for example, [bmw](https://www.obd-codes.com/trouble_codes/bmw/), download the page, parse it and export the codes to JSON format.
 
+```powershell
+> . .\scripts\GetCodes\Get-ManufacturerCodes.ps1
+> Get-ManufacturerSpecificCodes -CarMake audi
+
+Code  Description
+----  -----------
+P1101 O2 Sensor Circ.,Bank1-Sensor1Voltage too Low/Air Leak
+P1102 O2 Sensor Heating Circ.,Bank1-Sensor1 Short to B+
+P1103 O2 Sensor Heating Circ.,Bank1-Sensor1 Output too Low
+...
+
+```
+
+
 ### Export-ManufacturerSpecificCodesJson
 
 Will Export all the specific codes for all manufacturers, in a list of Json files. See the files [here](data/ManufacturerSpecificCodes). For Example [bmw.json](data/ManufacturerSpecificCodes/bmw.json)
+
+
+```powershell
+> . .\scripts\GetCodes\Get-ManufacturerCodes.ps1
+> Export-ManufacturerSpecificCodesJson
+Wrote acura.json
+Wrote audi.json
+Wrote bmw.json
+Wrote chevrolet.json
+Wrote dodge.json
+...
+
+ls ManufacturerSpecificCodes
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           5/29/2025 12:17 AM           4459 acura.json
+-a---           5/29/2025 12:17 AM          58327 audi.json
+-a---           5/29/2025 12:17 AM          26646 bmw.json
+-a---           5/29/2025 12:17 AM              6 chrysler.json
+-a---           5/29/2025 12:17 AM           8176 dodge.json
+-a---           5/29/2025 12:17 AM          19469 ford.json
+-a---           5/29/2025 12:17 AM           6681 honda.json
+-a---           5/29/2025 12:17 AM          12856 hyundai.json
+-a---           5/29/2025 12:17 AM           3243 infiniti.json
+-a---           5/29/2025 12:17 AM           5176 isuzu.json
+-a---           5/29/2025 12:17 AM              6 jeep.json
+-a---           5/29/2025 12:17 AM           4378 kia.json
+-a---           5/29/2025 12:17 AM              6 land.json
+-a---           5/29/2025 12:17 AM           5248 lexus.json
+-a---           5/29/2025 12:17 AM           1048 mitsubishi.json
+-a---           5/29/2025 12:17 AM           2908 nissan.json
+-a---           5/29/2025 12:17 AM              6 rover.json
+-a---           5/29/2025 12:17 AM           3737 toyota.json
+-a---           5/29/2025 12:17 AM              6 vw.json
+
+```
+
+### Get-CodeDescription
+
+
+```
+> Get-CodeDescription -Code "P1457" -CarMake bmw
+
+Code  Description                                                                CarMake
+----  -----------                                                                -------
+P1457 Heated Catalyst Heater Power Switch Temperature Sensor Electrical (Bank 1) bmw
+```
+
+If it doesn't exists in the Manufacturere Specific COdes (Generic Code), it will open a web page:
 
 <center><img src="img/example.png" alt="banner"></center>
