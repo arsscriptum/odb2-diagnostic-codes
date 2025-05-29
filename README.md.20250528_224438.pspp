@@ -1,0 +1,82 @@
+﻿<center><img src="img/logo.png" alt="banner"></center>
+
+## What's This ?
+
+It's my lazy attempt at setting up a database containing all the possible ODB2 diagnostic codes.
+
+## What is a Diagnostic Trouble Code (DTC)?
+
+Diagnostic trouble codes, in broad terms, are codes that computer diagnostic system in a given car has. The system displays a certain code depending on what kind of problem that the system can detect from inside of a car.
+Diagnostic trouble costs are used to help car mechanics and owners with a rich expertise in car maintenance understand problems with the car and where the root of the car’s problem or problems may lie.
+These codes must be used along with the car’s manual to determine what needs to be examined and tested to properly diagnose a car’s problem whether from professional OBD 2 software or with a car code reader.
+
+
+## Explication of Diagnostic Codes
+
+DTCs come in a string of five characters. One code for example, might be “P0806”.
+
+<center><img src="img/details.png" alt="banner"></center>
+
+
+The first character will either be P (powertrain), B (Body-AC/Airbag), C (chassis-ABS) or U (network-CAN/BUS). This character will help you determine which of the four main car’s parts is at fault.
+
+The second character either will be a 0 or 1. 0 means it is a generic OBD 2 code. 1 means it is a car manufacturer exclusive code.
+
+The third character can be one of many letters or numbers. This list of characters include 1 (fuel and air metering), 2 (fuel and air metering-injector circuit), 3 (ignition system or misfire), 4 (auxiliary emission control), 5 (vehicle speed and idle control systems), 6 (computer autput circuit), 7,8 or 9 (transmission) and A, B or C (hybrid propulsion).
+
+The fourth and fifth characters in the code represent a specific description of the problem with the part and system in question. These are numbered by “00”, “01”, “02” and so on.
+
+In total, there are over 5000 generic and manufacturer exclusive OBD 2 troubleshooting codes that exist. You can refer to our master list of DTCs to help you best understand your specific car problem based on your code.
+
+
+## Difference Between Generic & Manufacturer Specific…
+
+As explained earlier, general DTCs start with P0XXX, and manufacturer exclusive DTCs start with P1XXX. Generic DTCs are defined in the standards for OBD 2 and EOBD 2, and applies to all official car manufacturers.
+
+Manufacturer exclusive DTCs, however, are not available in the generic code databases, and are instead created and defined by a car manufacturer for all the cars they make.
+
+| **Powertrain Codes** |        **TYPE**        |         | **Chassis Codes** |        **TYPE**        |
+|:--------------------:|:----------------------:|         |-------------------|:----------------------:|
+|         P0xxx        |         Generic        |         |       C0xxx       |         Generic        |
+|         P1xxx        | Manufacturer -specific |         |       C1xxx       | Manufacturer -specific |
+|         P0xxx        |         Generic        |         |       C2xxx       | Manufacturer -specific |
+|      P30xx-P33xx     | Manufacturer -specific |         |       C3xxx       |         Generic        |
+|      P34xx-P39xx     |         Generic        |         |                   |                        |
+
+
+|    **Body Codes**    |        **TYPE**        |         | **Chassis Codes** |        **TYPE**        |
+|:--------------------:|:----------------------:|         |-------------------|:----------------------:|
+|         B0xxx        |         Generic        |         |       C0xxx       |         Generic        |
+|         1xxx        | Manufacturer -specific |         |       C1xxx       | Manufacturer -specific |
+|         P0xxx        | Manufacturer -specific |         |       C2xxx       | Manufacturer -specific |
+|      P30xx-P33xx     |         Generic        |         |       C3xxx       |         Generic        |
+ |                     |                        |         |                   |                        |
+
+
+
+
+
+## Resources
+
+1. [obd2pros](https://obd2pros.com/dtc-codes)
+2. [obd-codes.com](https://www.obd-codes.com/trouble_codes/)
+3. [Kelly's Blue Book](https://www.kbb.com/obd-ii/)
+
+
+
+
+OBD-II codes are part of the self-diagnostic system that all cars come with. The OBD system uses Diagnostic Trouble Codes (DTC) to tell you which specific component has an issue. They’re five-digit codes and are made up of four different subsets of codes that indicate where in the vehicle the malfunction lies (for example, P1234).
+
+The first number in the DTC tells you if the code is specific to the vehicle manufacturer or a generic code that applies to all OBD-II systems. The last three numbers tell you specific information on the vehicle system or circuit that is running into trouble. The first of these subsets is the powertrain, or P codes, and is the largest of the four categories. This is followed by network and integration (U), body (B), and chassis (C) codes.
+
+The P codes deal with the powertrain system of the vehicle, which includes the engine, transmission, and any associated drivetrain accessories. P codes can be further broken down by where the numeric total after the P lies in the OBD-II code list:
+
+- P0100-P0199: Deal with fuel and air metering and monitor the vehicle’s fuel mileage and emissions systems. Parts like the oxygen sensor lie within this subset of P codes as well as parts controlling air-to-fuel ratios in the vehicle.
+- P0200-P0299: Associated with the fuel injector circuit and will only include parts like the fuel injectors.
+- P0300-P0399: Indicate issues with engine misfiring so they typically include parts like spark plugs or ignition parts.
+- P0400-P0499: Deal with auxiliary emissions controls like the EVAP (Evaporative Emission Control) system. The EVAP functions by preventing gas fumes from reaching the outside atmosphere and keeping air pollution to a minimum.
+The next couple of P code subsets have to deal with a vehicle’s computer systems:
+
+- P0500-P0599: Deal with the vehicle speed controls and idle control systems. Typically, issues with the vehicle speed sensor (VSS) will trigger these codes on the vehicle.
+- P0600-P0699: Computer output circuit problems and any issues stemming from a faulty computer system will trigger these codes.
+- P0700-P0899: Specifically indicate problems with the transmission system and any related components. Since these codes monitor the functioning of the transmission, their appearance typically relates to faults in the computer that control how the transmission operates.
