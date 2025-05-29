@@ -36,23 +36,36 @@ Manufacturer exclusive DTCs, however, are not available in the generic code data
 
 <center><img src="img/types.png" alt="banner"></center>
 
+| **Powertrain Codes** |        **TYPE**        |
+|:--------------------:|:----------------------:|
+|         P0xxx        |         Generic        |
+|         P1xxx        | Manufacturer -specific |
+|         P0xxx        |         Generic        |
+|      P30xx-P33xx     | Manufacturer -specific |
+|      P34xx-P39xx     |         Generic        |
 
-| **Powertrain Codes** |        **TYPE**        |         | **Chassis Codes** |        **TYPE**        |
-|:--------------------:|:----------------------:|         |-------------------|:----------------------:|
-|         P0xxx        |         Generic        |         |       C0xxx       |         Generic        |
-|         P1xxx        | Manufacturer -specific |         |       C1xxx       | Manufacturer -specific |
-|         P0xxx        |         Generic        |         |       C2xxx       | Manufacturer -specific |
-|      P30xx-P33xx     | Manufacturer -specific |         |       C3xxx       |         Generic        |
-|      P34xx-P39xx     |         Generic        |         |                   |                        |
+| **Chassis Codes** |        **TYPE**        |
+|:-----------------:|:----------------------:|
+|       C0xxx       |         Generic        |
+|       C1xxx       | Manufacturer -specific |
+|       C2xxx       | Manufacturer -specific |
+|       C3xxx       |         Generic        |
 
 
-|    **Body Codes**    |        **TYPE**        |         | **Network Communication codes** |        **TYPE**        |
-|:--------------------:|:----------------------:|         |:-------------------------------:|:----------------------:|
-|         B0xxx        |         Generic        |         |              U0xxx              |         Generic        |
-|         B1xxx        | Manufacturer -specific |         |              U1xxx              | Manufacturer -specific |
-|         B2xxx        | Manufacturer -specific |         |              U1xxx              | Manufacturer -specific |
-|         B30xx        |         Generic        |         |              U0xxx              |         Generic        |
-|                      |                        |         |                                 |                        |
+| **Body Codes** |        **TYPE**        |
+|:--------------:|:----------------------:|
+|     B0xxx      |         Generic        |
+|     B1xxx      | Manufacturer -specific |
+|     B2xxx      | Manufacturer -specific |
+|     B30xx      |         Generic        |
+
+
+| **Network Communication codes** |        **TYPE**        |
+|:-------------------------------:|:----------------------:|
+|              U0xxx              |         Generic        |
+|              U1xxx              | Manufacturer -specific |
+|              U1xxx              | Manufacturer -specific |
+|              U0xxx              |         Generic        |
 
 
 
